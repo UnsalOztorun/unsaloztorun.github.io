@@ -1,17 +1,18 @@
 .jumbotron {
-    background-color:deeppink;
-    color: white;
+	background-color: deeppink;
+	color: white;
 }
 
-.container{
-    background-color: forestgreen;
-}
+.container {}
 
 .page-header {
-    
+	
 }
 
-.row{
-    text-align: center;
-    color: white;
+.row {
+	text-align: center;
+}
+
+.page-header{
+	text-align: center;
 }
