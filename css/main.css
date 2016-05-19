@@ -3,7 +3,15 @@
     color: white;
 }
 
+.container{
+    background-color: forestgreen;
+}
+
 .page-header {
     
 }
 
+.row{
+    text-align: center;
+    color: white;
+}
