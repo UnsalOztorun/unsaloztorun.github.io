@@ -5,3 +5,7 @@ body {
 .container {
 	max-width: 1000px;
 }
+
+.logo {
+	margin-top: 40px;
+}
