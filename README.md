@@ -15,7 +15,7 @@
 
 ## About
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+Merhabalar Ben Ünsal Öztorun Semi Profesyonel Front End Developer'ım Diğer Ilgi Alanlarımdan Bazıları Logo, Design(dizayn), pixelart vede Gml(gamemaker) Peki Beni Neden Seçmelisiniz? Ilk Olarak Sadelik Yaratacılık Efektifliğe Önem Veriyorum Bu Sayede Projelerim Modern Akıcı Vede Rahat Hisettiriyor
 
 * http://unsaloztorun.github.io
 * https://twitter.com/UnsalOztorun_cy
