@@ -14,7 +14,7 @@ main {
 
 footer.page-footer {
     background-color: #3b3b3f;
-    margin-top: 2rem;
+    margin-top: 6rem;
 }
 
 .navbar .btn-group .dropdown-menu a:hover {
@@ -76,4 +76,12 @@ footer.page-footer {
 
 .comment {
     margin-top: 3rem;
+}
+
+.shadow {
+    text-shadow: 7px 7px 10px rgba(0, 4, 24, 0.384);
+}
+
+.aboutme {
+    margin-top: 4rem;
 }
