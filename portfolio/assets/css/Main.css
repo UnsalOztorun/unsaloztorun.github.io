@@ -10,3 +10,16 @@ html , body {
                                   supported by Chrome, Opera and Firefox */
 }
 
+
+@font-face {
+  font-family: 'righteousregular';
+  src: url('../font/righteous-regular-webfont.woff2') format('woff2'),
+       url('../font/righteous.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.header-logo {
+  font-family: righteousregular;
+}
