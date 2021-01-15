@@ -1,9 +1,3 @@
-/**
-* Template Name: MyResume - v2.1.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -13,17 +7,96 @@ body {
   color: #1a1a1a;
 }
 
+.gallery {
+  margin-top: 50rem; 
+}
+
 a {
-  color: #0563bb;
+  color: linear-gradient(90deg, rgba(255,121,0,1) 0%, rgba(255,61,0,1) 100%);
 }
 
 a:hover {
-  color: #067ded;
+  color: linear-gradient(90deg, rgba(255,121,0,1) 0%, rgba(255,61,0,1) 100%);
   text-decoration: none;
 }
 
 h1, h2, h3, h5, h6 {
   font-family: "Raleway", sans-serif;
+}
+
+
+.container.gallery-container {
+  background-color: #fff;
+  color: #35373a;
+  min-height: 100vh;
+  padding: 30px 50px;
+}
+
+.gallery-container h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: bold;
+}
+
+.gallery-container p.page-description {
+  text-align: center;
+  margin: 25px auto;
+  font-size: 18px;
+  color: #999;
+}
+
+.tz-gallery {
+  padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+  padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+  width: 100%;
+  border-radius: 0;
+  position: relative;
+}
+
+.tz-gallery .lightbox:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -13px;
+  margin-left: -13px;
+  opacity: 0;
+  color: #fff;
+  font-size: 26px;
+  font-family: 'Glyphicons Halflings';
+  content: '\e003';
+  pointer-events: none;
+  z-index: 9000;
+  transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color:  rgba(255, 255, 255, 0.301);
+  content: '';
+  transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+  opacity: 1;
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
 }
 
 /*--------------------------------------------------------------
@@ -37,7 +110,7 @@ h1, h2, h3, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #0563bb;
+  background: linear-gradient(90deg, rgba(255,121,0,1) 0%, rgba(255,61,0,1) 100%);
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -52,7 +125,7 @@ h1, h2, h3, h5, h6 {
 
 .back-to-top:hover {
   color: #fff;
-  background: #0678e3;
+  background: linear-gradient(90deg, rgba(255,121,0,1) 0%, rgba(255,61,0,1) 100%);
   transition: background 0.2s ease-in-out;
 }
 
@@ -149,7 +222,7 @@ h1, h2, h3, h5, h6 {
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #fff;
-  background: #0563bb;
+  background: linear-gradient(90deg, rgba(255,121,0,1) 0%, rgba(255,61,0,1) 100%);
 }
 
 .nav-menu a:hover span, .nav-menu .active > a span, .nav-menu li:hover > a span {
@@ -194,7 +267,7 @@ h1, h2, h3, h5, h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: #0563bb;
+  color: linear-gradient(90deg, rgba(255,121,0,1) 0%, rgba(255,61,0,1) 100%);
 }
 
 /*--------------------------------------------------------------
@@ -203,7 +276,7 @@ h1, h2, h3, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero.jpg") top right no-repeat;
+  background: url("../img/hero.mp4") top right no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -216,7 +289,7 @@ h1, h2, h3, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -240,7 +313,7 @@ h1, h2, h3, h5, h6 {
 }
 
 #hero p span {
-  color: #0563bb;
+  color: #f08c2f;
   letter-spacing: 1px;
 }
 
@@ -258,7 +331,7 @@ h1, h2, h3, h5, h6 {
 }
 
 #hero .social-links a:hover {
-  color: #0563bb;
+  color: #f08c2f;
 }
 
 @media (max-width: 992px) {
@@ -316,7 +389,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #0563bb;
+  background: linear-gradient(90deg, rgba(255,121,0,1) 0%, rgba(255,61,0,1) 100%);
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -346,7 +419,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 2px;
-  color: #0563bb;
+  color: #f08c2f;
 }
 
 .about .content p:last-child {
@@ -371,7 +444,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #0563bb;
+  background: linear-gradient(90deg, rgba(255,121,0,1) 0%, rgba(255,61,0,1) 100%);
   padding: 12px;
   color: #fff;
   border-radius: 50px;
@@ -423,7 +496,7 @@ section {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #0563bb;
+  background-color: linear-gradient(90deg, rgba(255,121,0,1) 0%, rgba(255,61,0,1) 100%);
 }
 
 /*--------------------------------------------------------------
@@ -440,7 +513,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0563bb;
+  border-left: 2px solid linear-gradient(90deg, rgba(255,121,0,1) 0%, rgba(255,61,0,1) 100%);
   position: relative;
 }
 
@@ -450,7 +523,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #0563bb;
+  color: #f08c2f;
   margin-bottom: 10px;
 }
 
@@ -484,7 +557,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #0563bb;
+  border: 2px solid #f08c2f;
 }
 
 /*--------------------------------------------------------------
@@ -518,7 +591,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #0563bb;
+  color: linear-gradient(90deg, rgba(255,121,0,1) 0%, rgba(255,61,0,1) 100%);;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -535,7 +608,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.93);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -567,11 +640,11 @@ section {
   content: "";
   width: 48px;
   height: 48px;
-  position: absolute;
+  position: absolute; 
   top: 35px;
   left: 35px;
-  border-top: 3px solid #d7dce1;
-  border-left: 3px solid #d7dce1;
+  border-top: 3px solid #f08c2f;
+  border-left: 3px solid #f08c2f;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -584,20 +657,20 @@ section {
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 3px solid #d7dce1;
-  border-right: 3px solid #d7dce1;
+  border-bottom: 3px solid #f08c2f;
+  border-right: 3px solid #f08c2f;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #45505b;
+  color: #1a1a1a;
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #45505b;
+  color: #1a1a1a;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -618,7 +691,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #148af9;
+  color: #f08c2f;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -770,7 +843,7 @@ section {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #0563bb !important;
+  background-color: #f08c2f !important;
 }
 
 @media (min-width: 992px) {
@@ -789,7 +862,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #0563bb;
+  color: #f08c2f;
   float: left;
   width: 44px;
   height: 44px;
@@ -821,7 +894,7 @@ section {
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #0563bb;
+  background: #f08c2f;
   color: #fff;
 }
 
@@ -899,7 +972,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #0563bb;
+  background: #f08c2f;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -908,7 +981,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #0678e3;
+  background: #f08c2f;
 }
 
 @-webkit-keyframes animate-loading {
@@ -957,7 +1030,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #0563bb !important;
+  background-color: #f08c2f !important;
 }
 
 .portfolio-details .portfolio-info {
@@ -1025,7 +1098,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #0563bb;
+  background: linear-gradient(90deg, rgba(255,121,0,1) 0%, rgba(255,61,0,1) 100%);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1038,7 +1111,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #0678e3;
+  background: linear-gradient(90deg, rgba(255,121,0,1) 0%, rgba(255,61,0,1) 100%);
   color: #fff;
   text-decoration: none;
 }
