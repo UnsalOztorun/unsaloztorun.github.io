@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="timer-container">
+            <h1>Pomodoro Timer</h1>
+            <div class="animation-container">
+                <dotlottie-player id="work-animation" src="https://lottie.host/daafc117-50d9-473b-92c7-c010ed37c4ce/WcH4Yjt038.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop></dotlottie-player>
+                <dotlottie-player id="break-animation" src="https://lottie.host/348aab93-40ea-4f19-9d3d-510e5f2485a3/YXTxAcJeBs.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" loop></dotlottie-player>
+            </div>
+            <div class="timer" id="timer">25:00</div>
+            <div class="controls">
+                <button id="start">Start</button>
+                <button id="pause">Pause</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="session-info">
+                <p id="session-type">Work Session</p>
+                <p id="sessions-completed">Sessions completed: 0</p>
+            </div>
+        </div>
+        <div class="music-container">
+            <h2>Background Music</h2>
+            <div class="music-controls">
+                <select id="playlist" class="music-select">
+                    <option value="">Select Playlist</option>
+                    <option value="focus">Focus Playlist</option>
+                    <option value="ambient">Ambient Sounds</option>
+                    <option value="lofi">Lo-Fi Beats</option>
+                    <option value="nature">Nature Sounds</option>
+                </select>
+                <div class="youtube-input">
+                    <input type="text" id="youtube-link" placeholder="Paste YouTube URL here" class="youtube-url">
+                    <button id="play-youtube" class="play-btn">Play</button>
+                </div>
+            </div>
+            <div id="player"></div>
+            <div class="volume-control">
+                <label for="volume">Volume:</label>
+                <input type="range" id="volume" min="0" max="100" value="50">
+            </div>
+            <div id="now-playing" class="now-playing"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
